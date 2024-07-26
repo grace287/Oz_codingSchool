@@ -1,0 +1,100 @@
+* {
+    box-sizing: border-box;
+}
+html {height: 100%;}
+body {
+    width: 100%;height: 100%;
+    margin: 0;padding: 0;
+    background-image: url("https://i.pinimg.com/736x/0e/9b/6f/0e9b6fbc0d073b147ba443d1ddd6891b.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-color: goldenrod;
+}
+header {
+   height: 10%;
+   padding: 20px;
+   background-color: white;
+
+}
+header div {display: inline-block; float: left;}
+
+main {
+    padding: 30px;
+}
+main p {
+    position: relative;
+    margin-bottom: 10px;
+}
+#message {
+    padding: 10px;
+    width: 300px;
+    height: 50px;
+    background-color: white;
+    border: solid 1px;
+    border-radius: 10px;
+}
+
+.right {float: right;}
+
+.right:after {
+        border-top:25px solid transparent;
+        border-left: 20px solid transparent;
+        border-right: 0px solid transparent;
+        border-bottom: 25px solid pink;
+        content:"";
+        position:absolute;
+        bottom:0px;
+        left:-20px;
+}
+
+.user_pic {
+    width: 50px;height: 50px;
+    margin-right: 10px;
+    background-image: url("https://img.vogue.co.kr/vogue/2019/03/style_5c8f44e9ab81e.jpg");
+    background-size: contain;
+    background-color:goldenrod ;
+    border-radius: 10px;
+}
+.friend_list {
+    margin: 5px;
+}
+section {
+    height: calc(100% - 120px);
+}
+
+
+
+footer {
+   height: 120px;
+    background-color:#cccccc ;
+}
+footer div {display: inline-block;}
+footer .chat_text {
+    width: 90%;
+    height: 100%;
+    background-color: white;
+}
+textarea {width: 100%;height: 100%;  border: none;
+    font-size: 24px;
+    padding: 10px;
+    resize: none;
+
+}
+.send_button {
+    
+}
+.chat_btn {
+  width: 120px;height: 120px;
+  border-radius: 10px;
+  background-color: goldenrod;
+  float: right;
+  border: double;
+  box-shadow: 10px;
+  font-size: 20px;
+  font-weight: bold;
+  cursor: pointer;
+}
+.chat_btn:hover {
+    background-color: turquoise;
+
+}
