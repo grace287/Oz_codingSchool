@@ -1,0 +1,70 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Black+Han+Sans&family=Nanum+Gothic:wght@400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Black+Han+Sans&family=Dongle&family=Nanum+Gothic:wght@400;700&display=swap');
+body {
+    width: 100%; list-style: none; }
+
+    li {list-style-type: none;;}
+
+h1 {text-align: center;
+    font-size: 70px;
+    font-family: "Dongle", sans-serif;
+  font-weight: 600;
+  font-style: normal;
+}
+h2 {
+    font-family: "Black Han Sans", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+.profile-img {
+    display: block;
+    margin: auto;
+    width: 300px;
+    margin: 0 auto;
+    border-radius: 50%;
+    border : 10px double purple;
+}
+        main {width: 50%; margin: 0 auto;
+            margin-top: 50px;}
+
+    .intro {
+        display: block;
+        margin: auto;
+    }
+        .detail {text-align: center;
+        }
+
+        .wine-list {text-align: center;
+       
+            display: inline-block;
+        }
+        .wine-list li {float: left;}
+    li img {width: 100px;height: 300px; padding: 40px;}
+
+
+    .tooltip {
+        position: relative;
+        display: inline-block;
+        border-bottom: 1px dotted black;
+      }
+      
+      .tooltip .tooltiptext {
+        visibility: hidden;
+        width: 120px;
+        background-color: black;
+        color: #fff;
+        text-align: center;
+        border-radius: 6px;
+        padding: 5px 0;
+        
+        /* Position the tooltip */
+        position: absolute;
+        z-index: 1;
+        top: 5px;
+        right: 10%;
+      }
+      
+      .tooltip:hover .tooltiptext {
+        visibility: visible;
+      }
