@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>몬스터 잡기</title>
+</head>
+<body>
+    <div id="container"></div>
+    <p id="img"></p>
+    
+    <script>
+        let monsterHP = 100;
+        const container = document.getElementById("container");
+        const h1 = document.createElement("h1");
+        h1.textContent = "몬스터 잡기 게임을 시작합니다!";
+        container.appendChild(h1);
+    
+        // 게임 시작 여부 확인
+        if (confirm("몬스터 잡기 게임을 시작하겠습니까?")) {
+            let attackDamage = parseInt(prompt("1회 공격 시 데미지는? (양의 정수)"), 10);
+            let attackCount = 0;
+    
+            if (attackDamage > 0) {
+                while (monsterHP > 0) {
+                    monsterHP -= attackDamage; // HP 감소
+                    attackCount += 1; // 때린 횟수 증가
+    
+                    // HP가 0보다 작아지면 0으로 설정
+                    if (monsterHP < 0) {
+                        monsterHP -= 0;
+                    }
+    
+                    // 공격 결과를 화면에 표시
+                    const p = document.createElement("p");
+                    p.textContent = `몬스터를 ${attackCount}회 공격했다!`;
+                    container.appendChild(p);
+    
+                    // 남은 HP를 화면에 표시
+                    const strong = document.createElement("strong");
+                    strong.style.cssText =
+                    "color:red;"
+                    strong.textContent = `몬스터의 남은 HP는 ${monsterHP}입니다!`;
+                    container.appendChild(strong);
+                }
+    
+                console.log(`총 ${attackCount}회의 공격으로 몬스터를 쓰러뜨렸습니다!`);
+    
+                // 몬스터를 잡았을 때 이미지 표시
+                const img = document.createElement("img");
+                img.src = "https://media0.giphy.com/media/jsGz81YPCgw9YSliV0/giphy.gif?cid=6c09b952zxosivkeq5vlh9djgfqeqqz5tqbe0du1u1mfwkub&ep=v1_internal_gif_by_id&rid=giphy.gif&ct=s"; // 이미지 파일의 경로를 설정
+                img.alt = "몬스터를 잡았다!";
+                container.appendChild(img);
+            } else {
+                alert("데미지를 잘못 입력하여 게임을 취소합니다.");
+            }
+        } else {
+            alert("게임을 시작하지 않아 실행을 종료합니다.");
+        }
+    </script>
+</body>
+</html>
