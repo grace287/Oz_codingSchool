@@ -11,10 +11,9 @@ form.addEventListener("submit", function(e){
   let userCategory = e.target.category.value
   let userGender = e.target.gender.value
   let userEmail = e.target.email.value
-  let userIntro = e.target.intro.value
 
   console.log(userId, userPw1, userPw2, userName,
-    userPhone, userPosition, userGender, userEmail, userIntro)
+    userPhone, userCategory, userGender, userEmail)
 
   if(userId.length < 6){
     alert("아이디가 너무 짧습니다. 6자 이상 입력해주세요.")
@@ -31,7 +30,7 @@ form.addEventListener("submit", function(e){
     아이디 : ${userId} <br>
     이름 : ${userName} <br>
     전화번호 : ${userPhone} <br>
-    원하는 직무 : ${userPosition} <br>
+    선호하는 카테고리 : ${userCategory} <br>
     가입해 주셔서 감사합니다.
     </p> `)
 })

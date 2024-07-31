@@ -25,8 +25,22 @@
     .dark-mode main { background-color: #1e1e1e; }
     .dark-mode .pagination a { border-color: #ffffff; color: #121212; }
     .dark-mode .pagination a.active { background-color: #007bff; }
-    .dark-mode .pagination a:hover { background-color: #333333; }
+    .dark-mode .pagination a:hover { background-color: #007bff; }
     .toggle-dark-mode { cursor: pointer; padding: 10px; background-color: #007bff; color: white; border: none; border-radius: 5px; }
+
+    #data-table {
+        background-color: #333333;
+    }
+    .dark-mode .table>:not(caption)>*>* {
+        background-color: #1e1e1e;
+        color: #ffffff;
+    }
+
+    .dark-mode .btn-outline-primary:hover {
+        background-color: #ffffff;
+        color: #333333;
+    }
+
     .form-check {
         margin: 20px;
     }
