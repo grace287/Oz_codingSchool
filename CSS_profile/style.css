@@ -2,7 +2,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Black+Han+Sans&family=Nanum+Gothic:wght@400;700&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Black+Han+Sans&family=Dongle&family=Nanum+Gothic:wght@400;700&display=swap');
 body {
-    width: 100%; list-style: none; }
+    width: 100%; list-style: none;}
 
     li {list-style-type: none;;}
 
@@ -12,6 +12,7 @@ h1 {text-align: center;
   font-weight: 600;
   font-style: normal;
 }
+h1:hover {color: purple;}
 h2 {
     font-family: "Black Han Sans", sans-serif;
   font-weight: 400;
@@ -40,7 +41,7 @@ h2 {
             display: inline-block;
         }
         .wine-list li {float: left;}
-    li img {width: 100px;height: 300px; padding: 40px;}
+    li img {width: 100px;height: 300px; padding: 40px;display: inline-block;}
 
 
     .tooltip {
